@@ -28,7 +28,7 @@ $c=0;
 $d=0;
 echo('var captPieces = [[');
 while($row=mysql_fetch_array($f, MYSQL_ASSOC)){
-	if(ereg("white",$row['curColor']))
+	if(preg_match("#white#",$row['curColor']))
 		$c++;
 	if($c==1){
 		echo"], [";
