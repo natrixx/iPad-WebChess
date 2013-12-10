@@ -1,0 +1,200 @@
+/* $Id: userlogin.css,v 1.2 2010/08/14 16:57:54 sandking Exp $ */
+
+/*
+    This file is part of WebChess. http://webchess.sourceforge.net
+	Copyright 2010 Jonathan Evraire, Rodrigo Flores, Dadi Jonsson
+
+    WebChess is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    WebChess is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with WebChess.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color : #333;
+	background-color : #FFF;
+	font-size : 11px;
+	font-family : Arial, Helvetica, sans-serif;
+}
+
+#header {
+	margin:0;
+	/*margin-top:10px;*/
+	padding: 10px;
+	/*height:5%;*/
+	height: 35px;
+	width: auto;
+	border-style:solid;
+	border-color:#3B5998;
+	border-width:0px 0px 1px 0px;
+	background-color:#3B5998;
+	color: white;
+	box-shadow: #4c4c4c 0px 0px 8px;
+
+}
+
+#heading {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+#break {
+	height: 50px;
+}
+
+form {
+    margin: 0px;
+}
+
+
+
+.login {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding: 5px;
+	width: 350px;
+	background: #dddddd;
+	border:1px solid #888;
+	border-radius:10px;
+	box-shadow: #3B5998 0px 0px 4px;
+}
+
+.login h1 {
+	color: #333;
+	margin: 0px;
+	height: 50px;
+	padding: 15px 4px 0 50px;
+ 	text-align: left;
+	font-size: 1.5em;
+}
+
+.preferences {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6em;
+	padding: 15px;
+	border: 1px solid #cccccc;
+	width: 500px;
+	background: #F1F3F5;
+}
+
+.preferences h1 {
+	color: #333;
+	margin: 0px;
+	height: 50px;
+	padding: 15px 4px 0 50px;
+ 	text-align: left;
+	font-size: 1.5em;
+}
+
+.login p {
+	padding: 0 1em 0 1em;
+	}
+
+.form-block {
+	border: 1px solid #dddddd;
+	background: #dddddd;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+.login-form {
+	text-align: left;
+	/*float: right;*/
+	width: 350px;
+}
+
+.preferences-form {
+	text-align: left;
+	float: right;
+	width: 70%;
+}
+
+.login-text {
+	text-align: left;
+	width: 25%;
+	float: left;
+}
+
+.inputlabel {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 2.0em;
+	text-align: left;
+	letter-spacing: 1px;
+	}
+
+.inputbox {
+	width: 300px;
+	margin: 0 0 1em 0;
+	border: 1px solid #ccc;
+	font-size: 1.8em;
+	}
+
+.remember {
+	margin: 0 0 1em 0;
+	}
+
+.clr {
+    clear:both;
+    }
+
+.ctr {
+	text-align: center;
+}
+
+.warning {
+	color: #f00;
+	margin:0;
+	margin-bottom: 10px;
+	font-size:1.2em;
+}
+
+.instruction {
+	color: #000;
+	margin:0;
+	margin-bottom: 10px;
+	font-size:1.2em;
+}
+
+.version {
+	font-size: 0.8em;
+}
+
+.footer {
+
+}
+
+.button {		
+	-webkit-appearance: none;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	letter-spacing: 1px;
+	font-size: 2.0em;
+	color:#fff;
+	cursor:pointer;
+	background:#3B5998;
+	border: 1px solid #3B5998;
+	border-radius:10px;
+	text-align: center;
+	box-shadow: #4c4c4c 0px 0px 4px;
+}
+
+.button:hover{
+	color:yellow;
+}
