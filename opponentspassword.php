@@ -126,10 +126,6 @@ window.onload = function()
 				</div>
 			</form>
 		</div>
-		<div class="login-text">
-			<div class="ctr"><img src="images/webchess.jpg" width="65" height="92" alt="security" /></div>
-                        <p><?php echo gettext("Enter password for $opponentsNick");?></p>
-    	</div>
 		<div class="clr"></div>
 	</div>
 </div>
