@@ -62,7 +62,7 @@
 			if (document.userdata.pwdPassword.value == document.userdata.pwdPassword2.value)
 				document.userdata.submit();
 			else
-                                alert("<?php echo gettext("Sorry, the two password fields don't match. Please try again.");?>");
+                                alert("<?php echo gettext("Sorry, the two password fields dont match. Please try again.");?>");
 		}
 	</script>
 </head>
@@ -87,7 +87,7 @@
 						<?php
 							/* this var is set to true in mainmenu.php */
 							if ($tmpNewUser)
-								echo("<div class=\"warning\">Sorry, the nick you've chosen (".$_POST['txtNick'].") is already in use.  Please try another.</div>");
+								echo("<div class=\"warning\">Sorry, the nick you have chosen (".$_POST['txtNick'].") is already in use.  Please try another.</div>");
 						?>
 					</div>
                                         <div class="inputlabel"><?php echo gettext("Password");?></div>
@@ -125,11 +125,6 @@
 				</div>
 			</form>
 		</div>
-		<div class="login-text">
-			<div class="ctr"><img src="images/webchess.jpg" width="65" height="92" alt="security" /></div>
-                    <p><?php echo gettext("Welcome to WebChess!");?></p>
-                    <p><?php echo gettext("You must remember your nick and password to be able to gain access to WebChess.");?></p>
-    	</div>
 		<div class="clr"></div>
 	</div>
 </div>
