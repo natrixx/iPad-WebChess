@@ -33,13 +33,13 @@
 	/* NOTE: in chessutils.php a line is commented containing:
 	$headers .= "To: ".$msgTo."\r\n";
 	Some MTAs may require for you to uncomment such line. Do so if mail notification doesn't work */
-	$CFG_USEEMAILNOTIFICATION = false;	/* SMTP operations.  This flag allows you to easily activate
+	$CFG_USEEMAILNOTIFICATION = true;	/* SMTP operations.  This flag allows you to easily activate
 						   or deactivate this feature.  It is highly recommended you test
 						   it before putting it into production */
 						/* email address people see when receiving WebChess generated mail */
-	$CFG_MAILADDRESS = "WebChess@webchess.org";
+	$CFG_MAILADDRESS = "natrixx@natrixx.com";
 	/* This URL is displayed in the email notices */
-	$CFG_MAINPAGE = "http://webchess.sourceforge.net/webchess/";
+	$CFG_MAINPAGE = "http://natrixx.com/webchess/";
 
 	$CFG_MAXUSERS = 50;
 	$CFG_MAXACTIVEGAMES = 50;

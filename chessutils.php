@@ -230,10 +230,10 @@
                                 // ToDo: mailmsgundorequest.php ??
 		}
 
-		$headers .= "From: WebChess <".$CFG_MAILADDRESS.">\r\n";
+		$headers .= "From: Natrixx @ WebChess <".$CFG_MAILADDRESS.">\r\n";
 		/* Some MTAs may require for you to uncomment the following line. Do so if mail notification doesn't work */
 		//$headers .= "To: ".$msgTo."\r\n";
-		$headers .= "Reply-To: WebChess <".$CFG_MAILADDRESS.">\r\n";
+		$headers .= "Reply-To: Natrixx @ WebChess <".$CFG_MAILADDRESS.">\r\n";
 
 		mail($msgTo, $mailsubject, $mailmsg, $headers);
 	}

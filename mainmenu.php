@@ -680,10 +680,10 @@
 					?>
 					</select></div>
                                         <div class="inputlabel"><?php echo gettext("Auto-reload") . " (" . gettext("min: ") . ($CFG_MINAUTORELOAD) . " " . gettext("secs") . ")";?></div>
-					<div><input type="text" name="txtReload" class="inputboxPrefs" width="60px" value="<?php echo ($_SESSION['pref_autoreload']); ?>" /></div>
+					<div><input type="text" name="txtReload" class="inputboxPrefsReload" value="<?php echo ($_SESSION['pref_autoreload']); ?>" /></div>
 					<?php if ($CFG_USEEMAILNOTIFICATION) { ?>
                                                 <div class="inputlabel"><?php echo gettext("Email notification");?></div>
-						<div><input type="text" class="inputbox" name="txtEmailNotification" value="<?php echo($_SESSION['pref_emailnotification']); ?>" /></div>
+						<div><input type="text" class="inputboxPrefsEmail" name="txtEmailNotification" value="<?php echo($_SESSION['pref_emailnotification']); ?>" /></div>
                                                 <div class="instruction"><?php echo gettext("Enter a valid email address if you would like to be notified when your opponent makes a move. Leave blank otherwise.");?></div>
 						<?php if ($_SESSION['pref_emailnotification'] != "") { ?>
                                                         <input type="button" class="button" name="btnTestEmailNotification" value="<?php echo gettext("Test Email");?>" onclick="testEmail()" />

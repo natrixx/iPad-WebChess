@@ -384,8 +384,20 @@ color: yellow;
 background: #3B5998;
 border-color: #aaab9c #fff #fff #ccc;
 }
-.inputboxPrefs {
+
+.inputboxPrefsReload{
 	width: 60px;
+	/*height: 35px;*/
+	/*margin: auto;*/
+	margin-top: -10px;
+	margin-bottom: 10px;
+	/*float: left;*/
+	font-size: 1.6em;
+	/*border: 1px solid #ccc;*/
+}
+
+.inputboxPrefsEmail {
+	width: 300px;
 	/*height: 35px;*/
 	/*margin: auto;*/
 	margin-top: -10px;
