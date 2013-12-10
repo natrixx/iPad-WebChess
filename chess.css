@@ -182,12 +182,14 @@ div#castle p	{
 
 #players {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: bold;
+	font-weight: normal;
 	letter-spacing: 1px;
 	/*margin: 0;*/
 	/*padding: 0;*/
 	text-align:center;
+	text-decoration: underline;
 	color: yellow;
+	padding: 5px;
 	}
 
 #moveinfo {
@@ -217,15 +219,31 @@ div#castle p	{
 	}
 
 #captheading {
-	font-weight: bold;
-	background-color:#eee;
-	line-height: 1.5;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: normal;
+	font-size: 1.0em;
+	letter-spacing: 1px;
+	background-color:#3B5998;
+	color:yellow;
+	text-align: center;
+	text-decoration: underline;
+	padding:5px;
 	}
 
 #captures {
 	text-align:left;
+	width:90%;
 	margin-left: 10px;
+	border-top: 1px solid #4c4c4c;
 	}
+
+/*#captures img {
+	width:50px;
+	height: 50px;
+	box-shadow: #ff0000 0px 0px 4px;
+
+}*/
+
 #checkmsg {
 	width: 696px; 
 	border-radius:10px;
@@ -260,6 +278,8 @@ div#gamebody {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: small;
 	color: #fff;
+	width:90%;
+	margin-left: 10px;
 	border-top: 1px solid #4c4c4c;
 	}
 
