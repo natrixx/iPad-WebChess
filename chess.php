@@ -224,7 +224,7 @@ if(!isBoardDisabled() || $_SESSION['isSharedPC'])
 		<p>When castling, just move the king<br> (the rook moves automatically).</p>
 		</div>	
 		<div id="gamebody" class="move_header"></div>
-		<div id="captheading">Captured pieces</div>
+		<br><div id="captheading">Captured pieces</div>
 		<div id="captures"></div>
 
 		
