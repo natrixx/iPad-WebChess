@@ -84,21 +84,25 @@ form {
 }
 
 .preferences {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 6em;
-	padding: 15px;
-	border: 1px solid #cccccc;
-	width: 500px;
-	background: #F1F3F5;
+	margin-top: 10px;
+	padding: 5px;
+	width: 725px;
+	background: #dddddd;
+	border:1px solid #888;
+	border-radius:10px;
+	box-shadow: #3B5998 0px 0px 4px;
 }
 
 .preferences h1 {
-	color: #333;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	letter-spacing: 1px;
+	color: #000;
 	margin: 0px;
 	height: 50px;
-	padding: 15px 4px 0 50px;
- 	text-align: left;
+ 	text-align: center;
 	font-size: 1.5em;
 }
 
@@ -107,7 +111,7 @@ form {
 	}
 
 .form-block {
-	border: 1px solid #dddddd;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	background: #dddddd;
 	padding-top: 15px;
 	padding-left: 10px;
@@ -117,14 +121,14 @@ form {
 
 .login-form {
 	text-align: left;
-	/*float: right;*/
 	width: 350px;
 }
 
 .preferences-form {
-	text-align: left;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	text-align: center;
 	float: right;
-	width: 70%;
+	width: 725px;
 }
 
 .login-text {
@@ -145,6 +149,28 @@ form {
 	margin: 0 0 1em 0;
 	border: 1px solid #ccc;
 	font-size: 1.8em;
+	}
+
+.inputboxes {
+	width: 99%;
+	margin: auto;
+	margin-bottom: 10px;
+	float: left;
+	font-size: 1.6em;
+	}
+
+.inputboxPrefsReload{
+	width: 60px;
+	margin-bottom: 10px;
+	float: left;
+	font-size: 1.6em;
+}
+
+.inputboxPrefsEmail {
+	width: 300px;
+	margin-bottom: 10px;
+	float: left;
+	font-size: 1.6em;
 	}
 
 .remember {
