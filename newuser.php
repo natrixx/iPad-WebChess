@@ -141,9 +141,6 @@
 	</div>
 </div>
 <div id="break"></div>
-<div class="footer" align="center">
-	<div align="center"><?php echo "WebChess " . gettext("Version") . " 1.0.0, " . gettext("last updated") ." ". gettext("August"). " 15, 2010"?></div>
-	<div align="center"><a href="http://webchess.sourceforge.net/"><?php echo gettext("WebChess");?></a> <?php echo gettext("is Free Software released under the GNU General Public License (GPL).");?></div>
-</div>
+
 </body>
 </html>
