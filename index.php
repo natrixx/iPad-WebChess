@@ -85,11 +85,7 @@ window.onload = function()
 					<div><input id="txtNick" name="txtNick" type="text" class="inputbox" size="30" /></div>
                                         <div class="inputlabel"><?php echo gettext("Password:");?></div>
 					<div><input id="pwdPassword" name="pwdPassword" type="password" class="inputbox" size="30" /></div>
-					<div class="remember">
-                                        <label for="remember" title="<?php echo gettext("Remember me");?>" class="inputlabel">
-                                        <input id="remember" name="remember" type="checkbox" /><?php echo gettext("Remember me");?>
-					</label>
-					</div>
+					
 					<input name="ToDo" value="Login" type="hidden" />
 					<div class="LoginButtons">
 						<input type="submit" name="login" class="button" value="<?php echo gettext("Login");?>" />

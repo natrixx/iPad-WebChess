@@ -77,45 +77,57 @@
 			<form name="userdata" method="post" action="mainmenu.php">
 				<div class="form-block">
                                         <h1><?php echo gettext("Personal information");?></h1>
-                                        <div class="inputlabel"><?php echo gettext("First Name");?></div>
-					<div><input name="txtFirstName" type="text" class="inputbox" value="<?php echo($_POST['txtFirstName']); ?>" /></div>
-                                        <div class="inputlabel"><?php echo gettext("Last Name");?></div>
-					<div><input name="txtLastName" type="text" class="inputbox" value="<?php echo($_POST['txtLastName']); ?>" /></div>
-                                        <div class="inputlabel"><?php echo gettext("Nick");?></div>
+                                        <div class="inputlabel"><?php echo gettext("First Name:");?></div>
+					<div><input name="txtFirstName" type="text" class="inputboxes" value="<?php echo($_POST['txtFirstName']); ?>" /></div>
+                                        <div class="inputlabel"><?php echo gettext("Last Name:");?></div>
+					<div><input name="txtLastName" type="text" class="inputboxes" value="<?php echo($_POST['txtLastName']); ?>" /></div>
+                                        <div class="inputlabel"><?php echo gettext("Nick:");?></div>
 					<div>
-						<input name="txtNick" type="text" class="inputbox" />
+						<input name="txtNick" type="text" class="inputboxes" />
 						<?php
 							/* this var is set to true in mainmenu.php */
 							if ($tmpNewUser)
 								echo("<div class=\"warning\">Sorry, the nick you have chosen (".$_POST['txtNick'].") is already in use.  Please try another.</div>");
 						?>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("Password");?></div>
-					<div><input name="pwdPassword" type="password" class="inputbox" /></div>
-                                        <div class="inputlabel"><?php echo gettext("Password Confirmation");?></div>
-					<div><input name="pwdPassword2" type="password" class="inputbox" /></div>
+                                        <div class="inputlabel"><?php echo gettext("Password:");?></div>
+					<div><input name="pwdPassword" type="password" class="inputboxes" /></div>
+                                        <div class="inputlabel"><?php echo gettext("Password Confirmation:");?></div>
+					<div><input name="pwdPassword2" type="password" class="inputboxes" /></div>
                                         <h1><?php echo gettext("Personal preferences");?></h1>
-                                        <div class="inputlabel"><?php echo gettext("History");?></div>
-					<div class="inputbox">
-                                            <div><input name="rdoHistory" type="radio" value="pgn" checked="checked" /> <?php echo gettext("PGN");?></div>
-                                            <div><input name="rdoHistory" type="radio" value="verbous" /> <?php echo gettext("Verbose");?></div>
+                                        
+					<div class="inputboxRadioLeft">
+										<div class="inputlabel"><?php echo gettext("History:");?></div>
+                                            <div>
+
+                                                <input type="radio" id="history1" name="rdoHistory" value="pgn" checked><label for="history1">PGN</label>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="radio" id="history2" name="rdoHistory" value="verbous"><label for="history2">Verbose</label>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("History Layout");?></div>
-					<div class="inputbox">
-                                        <div><input name="rdoHistorylayout" type="radio" value="columns" checked="checked" /> <?php echo gettext("Columns (Scoresheet)");?></div>
-                                        <div><input name="rdoHistorylayout" type="radio" value="paragraph" /> <?php echo gettext("Paragraph");?></div>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("Theme");?></div>
-					<div class="inputbox">
-                                                <div><input name="rdoTheme" type="radio" value="beholder" checked="checked" /> <a href="http://www.beholder.co.uk"><?php echo gettext("Beholder");?></a></div>
-                                                <div><input name="rdoTheme" type="radio" value="plain" /> <?php echo gettext("Plain");?></div>
+
+					<div class="inputboxRadioMiddle">
+						            <div class="inputlabel"><?php echo gettext("History Layout:");?></div>
+                                        <div>
+                                                <input type="radio" id="history3" name="rdoHistorylayout" value="columns" checked><label for="history3">Columns</label>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="radio" id="history4" name="rdoHistorylayout" value="paragraph"><label for="history4">Paragraph</label>
+											</div>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("Auto-reload") . " (" . gettext("min:") . ($CFG_MINAUTORELOAD) . " " . gettext("secs") . ")";?></div>
-					<div><input type="text" class="inputbox" name="txtReload" value="<?php echo ($CFG_MINAUTORELOAD); ?>" /></div>
-					<?php if ($CFG_USEEMAILNOTIFICATION) { ?>
-                                                        <div class="inputlabel"><?php echo gettext("Email notification");?></div>
-							<div><input type="text" class="inputbox" name="txtEmailNotification" value="<?php echo($_POST['txtEmailNotification']); ?>" /></div>
-                                                        <div class="instruction"><?php echo gettext("Enter a valid email address if you would like to be notified when your opponent makes a move. Leave blank otherwise.");?></div>
+					<div class="inputboxRadioRight">
+                                        <div class="inputlabel"><?php echo gettext("Theme:");?></div>
+											<div>
+                                                <input type="radio" id="theme1" name="rdoTheme" value="beholder" checked><label for="theme1">Beholder</label>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="radio" id="theme2" name="rdoTheme" value="plain"><label for="theme2">Plain</label>
+											</div>
+					</div>
+                                        <div class="inputlabel"><?php echo gettext("Auto-reload:") . " (" . gettext("min:") . ($CFG_MINAUTORELOAD) . " " . gettext("secs") . ")";?></div>
+					<br><div><input type="text" class="inputboxPrefsReload" name="txtReload" value="<?php echo ($CFG_MINAUTORELOAD); ?>" /></div>
+					<br><br><br><?php if ($CFG_USEEMAILNOTIFICATION) { ?>
+                                                        <div class="inputlabel"><?php echo gettext("Email notification:");?></div>
+							<br><div><input type="text" class="inputboxPrefsEmail" name="txtEmailNotification" value="<?php echo($_POST['txtEmailNotification']); ?>" /></div>
+                                                        <br><br><br><div class="instruction"><?php echo gettext("Enter a valid email address if you would like to be notified when your opponent makes a move. Leave blank otherwise.");?></div>
 					<?php } ?>
 
                                         <input name="btnCreate" type="button" class="button" value="<?php echo gettext("Register");?>" onClick="validateForm()" />
