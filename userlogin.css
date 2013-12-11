@@ -28,6 +28,11 @@ body {
 	font-family : Arial, Helvetica, sans-serif;
 }
 
+.LoginButtons{
+
+	text-align: center;
+}
+
 #header {
 	margin:0;
 	/*margin-top:10px;*/
