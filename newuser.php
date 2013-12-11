@@ -95,25 +95,37 @@
                                         <div class="inputlabel"><?php echo gettext("Password Confirmation:");?></div>
 					<div><input name="pwdPassword2" type="password" class="inputboxes" /></div>
                                         <h1><?php echo gettext("Personal preferences");?></h1>
-                                        <div class="inputlabel"><?php echo gettext("History");?></div>
-					<div class="inputbox">
-                                            <div><input name="rdoHistory" type="radio" value="pgn" checked="checked" /> <?php echo gettext("PGN");?></div>
-                                            <div><input name="rdoHistory" type="radio" value="verbous" /> <?php echo gettext("Verbose");?></div>
+                                        
+					<div class="inputboxRadioLeft">
+										<div class="inputlabel"><?php echo gettext("History:");?></div>
+                                            <div>
+
+                                                <input type="radio" id="history1" name="rdoHistory" value="pgn" checked><label for="history1">PGN</label>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="radio" id="history2" name="rdoHistory" value="verbous"><label for="history2">Verbose</label>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("History Layout");?></div>
-					<div class="inputbox">
-                                        <div><input name="rdoHistorylayout" type="radio" value="columns" checked="checked" /> <?php echo gettext("Columns (Scoresheet)");?></div>
-                                        <div><input name="rdoHistorylayout" type="radio" value="paragraph" /> <?php echo gettext("Paragraph");?></div>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("Theme");?></div>
-					<div class="inputbox">
-                                                <div><input name="rdoTheme" type="radio" value="beholder" checked="checked" /> <?php echo gettext("Beholder");?></div>
-                                                <div><input name="rdoTheme" type="radio" value="plain" /> <?php echo gettext("Plain");?></div>
+
+					<div class="inputboxRadioMiddle">
+						            <div class="inputlabel"><?php echo gettext("History Layout:");?></div>
+                                        <div>
+                                                <input type="radio" id="history3" name="rdoHistorylayout" value="columns" checked><label for="history3">Columns</label>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="radio" id="history4" name="rdoHistorylayout" value="paragraph"><label for="history4">Paragraph</label>
+											</div>
 					</div>
-                                        <div class="inputlabel"><?php echo gettext("Auto-reload") . " (" . gettext("min:") . ($CFG_MINAUTORELOAD) . " " . gettext("secs") . ")";?></div>
+					<div class="inputboxRadioRight">
+                                        <div class="inputlabel"><?php echo gettext("Theme:");?></div>
+											<div>
+                                                <input type="radio" id="theme1" name="rdoTheme" value="beholder" checked><label for="theme1">Beholder</label>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+												<input type="radio" id="theme2" name="rdoTheme" value="plain"><label for="theme2">Plain</label>
+											</div>
+					</div>
+                                        <div class="inputlabel"><?php echo gettext("Auto-reload:") . " (" . gettext("min:") . ($CFG_MINAUTORELOAD) . " " . gettext("secs") . ")";?></div>
 					<br><div><input type="text" class="inputboxPrefsReload" name="txtReload" value="<?php echo ($CFG_MINAUTORELOAD); ?>" /></div>
 					<br><br><br><?php if ($CFG_USEEMAILNOTIFICATION) { ?>
-                                                        <div class="inputlabel"><?php echo gettext("Email notification");?></div>
+                                                        <div class="inputlabel"><?php echo gettext("Email notification:");?></div>
 							<br><div><input type="text" class="inputboxPrefsEmail" name="txtEmailNotification" value="<?php echo($_POST['txtEmailNotification']); ?>" /></div>
                                                         <br><br><br><div class="instruction"><?php echo gettext("Enter a valid email address if you would like to be notified when your opponent makes a move. Leave blank otherwise.");?></div>
 					<?php } ?>
