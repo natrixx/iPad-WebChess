@@ -382,9 +382,9 @@ window.onload = function ()
 	getObject("btnPGN").onclick = function(){downloadPGN();};
 	getObject("btnLogout").onclick = function(){logout();};
 
-	getObject("btnUndo").onclick = function(){undo();};
-	getObject("btnDraw").onclick = function(){draw();};
-	getObject("btnResign").onclick = function(){resigngame();};
+	getObject("btnUndo").onclick = function(){undoConfirmation();};
+	getObject("btnDraw").onclick = function(){drawConfirmation();};
+	getObject("btnResign").onclick = function(){resigngameConfirmation();};
 
 	if(isBoardDisabled != '1')
 	{

@@ -27,6 +27,24 @@
 		getObject("btnResign").disabled = true;
 	}
 
+function undoConfirmation(){
+   var retVal = confirm("Do you really want to send a request to undo your last move?");
+   if( retVal == true ){
+      alert("OK, your undo request will be sent for approval from your opponent.");
+
+      disableButtons();
+		document.gamedata.requestUndo.value = "yes";
+		if (DEBUG)
+			alert("gamedata.requestUndo = " + document.gamedata.requestUndo.value);
+
+		document.gamedata.submit();
+	  return true;
+   }else{
+      alert("OK, we will not send the undo request at this time.");
+	  return false;
+   }
+}
+
 	function undo()
 	{
 		disableButtons();
@@ -37,6 +55,24 @@
 		document.gamedata.submit();
 	}
 
+function drawConfirmation(){
+   var retVal = confirm("Do you really want to call this game a draw?");
+   if( retVal == true ){
+      alert("OK, your draw request will be sent for approval from your opponent.");
+
+      disableButtons();
+		document.gamedata.requestDraw.value = "yes";
+		if (DEBUG)
+			alert("gamedata.requestDraw = " + document.gamedata.requestDraw.value);
+
+		document.gamedata.submit();
+	  return true;
+   }else{
+      alert("OK, we will not send the draw request at this time.");
+	  return false;
+   }
+}
+
 	function draw()
 	{
 		disableButtons();
@@ -46,6 +82,24 @@
 
 		document.gamedata.submit();
 	}
+
+function resigngameConfirmation(){
+   var retVal = confirm("Do you really want to resign? This is permanent and cannot be undone!!");
+   if( retVal == true ){
+      alert("Better luck next time cowboy!");
+
+      disableButtons();
+		document.gamedata.resign.value = "yes";
+		if (DEBUG)
+			alert("gamedata.resign = " + document.gamedata.resign.value);
+
+		document.gamedata.submit();
+	  return true;
+   }else{
+      alert("OK, glad you decided to keep on keeping on!!");
+	  return false;
+   }
+}
 
 	function resigngame()
 	{
