@@ -261,7 +261,7 @@
 			<input type="radio" name="promotion" value="<?php echo (ROOK); ?>"> Rook
 			<input type="radio" name="promotion" value="<?php echo (KNIGHT); ?>"> Knight
 			<input type="radio" name="promotion" value="<?php echo (BISHOP); ?>"> Bishop
-			<br><input type="button" name="btnPromote" value="Promote" onClick="promotepawn()" />
+			<br><input type="button" class="button" name="btnPromote" value="Promote" onClick="promotepawn()" />
 		</td></tr>
 		</table>
 		</p>
