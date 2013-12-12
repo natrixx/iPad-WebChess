@@ -33,7 +33,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <link rel="stylesheet" href="userlogin.css" type="text/css" />
 <script type="text/javascript" src="javascript/cookies.js"></script>
-<title>WebChess :: <?php echo gettext("Login");?></title>
+<title>iPad WebChess :: <?php echo gettext("Login");?></title>
 <script language="javascript" type="text/javascript">
 var visitordata = null;
 var cookieDomain = null;

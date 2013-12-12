@@ -450,7 +450,7 @@
 <script type="text/javascript" src="javascript/tablesort.js"></script>
 <script type="text/javascript" src="javascript/menu.js"></script>
 <script type="text/javascript" src="javascript/messages.js"></script>
-<title><?php echo gettext("WebChess") . " :: " . gettext("Main Menu");?></title>
+<title><?php echo gettext("iPad WebChess") . " :: " . gettext("Main Menu");?></title>
 	<script type="text/javascript">
 		function validatePersonalInfo()
 		{

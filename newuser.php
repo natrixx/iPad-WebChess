@@ -44,7 +44,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 <link rel="stylesheet" href="userlogin.css" type="text/css" />
 <script type="text/javascript" src="javascript/cookies.js"></script>
-<title><?php echo gettext("WebChess") . " :: " . gettext("Create New User"); ?></title>
+<title><?php echo gettext("iPad WebChess") . " :: " . gettext("Create New User"); ?></title>
 
 	<script type="text/javascript">
 		function validateForm()
@@ -69,7 +69,7 @@
 
 <body>
 <div id="header">
-  <div id="heading"><?php echo gettext("WebChess") . " :: " . gettext("Create New User");?></div>
+  <div id="heading"><?php echo gettext("iPad WebChess") . " :: " . gettext("Create New User");?></div>
 </div>
 <div id="ctr" align="center">
 	<div class="preferences">

@@ -142,11 +142,11 @@
 		$isPlayersTurn = false;
 
 	if ($_SESSION['isSharedPC'])
-		echo("<title>WebChess</title>\n");
+		echo("<title>iPad WebChess</title>\n");
 	else if ($isPlayersTurn)
-		echo("<title>WebChess - Your Move</title>\n");
+		echo("<title>iPad WebChess - Your Move</title>\n");
 	else
-		echo("<title>WebChess - Opponent's Move</title>\n");
+		echo("<title>iPad WebChess - Opponent's Move</title>\n");
 ?>
 <script type="text/javascript">
 <?php
