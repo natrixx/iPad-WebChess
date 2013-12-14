@@ -24,6 +24,11 @@
 	$CFG_USER = "n8webchess";
 	$CFG_PASSWORD = "AgentofK@0s";
 	$CFG_DATABASE = "n8webchess";
+	
+	/*$CFG_SERVER = "127.6.172.129";
+	$CFG_USER = "n8webchess";
+	$CFG_PASSWORD = "AgentofK@0s";
+	$CFG_DATABASE = "n8webchess";*/
 
 	/* server settings */
 	$CFG_SESSIONTIMEOUT = 900;		/* session times out if user doesn't interact after 900 secs (15 mins) */
